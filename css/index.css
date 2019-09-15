@@ -39,10 +39,23 @@ main {
 
 }
 
-
-/*#navbar {
+main .product img {
+    width: 100%;
     display: block;
-}*/
+}
+
+main .product .product-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 600px) {
+   main .product-list {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-gap: 5px;
+   }
+}
 
 .menu-buttons a {
     color: rgb(10, 8, 8);
@@ -53,6 +66,7 @@ main {
     width: 50%;
     text-align: center;
     font: normal 24px arial;
+    transition: all 0.9s;
 }
 
 .menu-buttons a:hover {
