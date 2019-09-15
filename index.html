@@ -15,29 +15,31 @@
             <img src="img/logo.jpg" alt="Lviv Language Club">
             <a href="contacts.html">languageclublviv@gmail.com</a>
         </header>
-        <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-        <div style="padding-left:16px">
+        <nav>
             <h2>Львівський мовний клуб</h2>
-            <p>Спілкуйся, дружи, розвивайся!</p>
-        </div>
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active"></a>
+                <a href="#news">ГОЛОВНА</a>
+                <a href="#contact">КЛУБИ</a>
+                <a href="#about">КОНТАКТИ</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div style="padding-left:26px">
+                <p>Спілкуйся, дружи, розвивайся!</p>
+            </div>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
                 }
-            }
-        </script>
+            </script>
+        </nav>
         <main>
             <p class="img">
                 <img src="img/main.jpg" alt="mains">
@@ -84,6 +86,7 @@
             </form>
             <p>ЗВЯЗАТИСЬ З НАМИ
                Телефон: +38(097)4212345
+
             <p>+38(050)4212345</p>
             <p>УкраЇна, м. Львів,
                вул., Братів Рогатинців, 12, оф. 2.
